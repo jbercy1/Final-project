@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampNow Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3); 
+        }
+
+        .header a {
+            text-decoration: none; 
+            color: inherit;
+        }
+
+        .header h1 {
+            margin: 10px 0 0 0;
+            color: #fff; 
+        }
+
+        .header img {
+            height: 80px;
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1, p {
+            margin: 20px 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: #000; 
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.php">
+            <img src="images/logo.png" alt="CampNow Logo">
+        </a>
+        <a href="index.php">
+            <h1>CampNow</h1>
+        </a>
+    </header>
+    <div class="container">
+        <h1>Login to CampNow</h1>
+        <p>Discover the wonders of camping with CampNow, your premier platform for exploring the great outdoors across America. Whether you're a seasoned camper or new to outdoor adventures, CampNow provides you with essential tools to plan and manage your camping trips.</p>
+        <p>Log in to your CampNow account to access personalized features and benefits. From checking upcoming reservations to reviewing past camping trips, CampNow ensures you stay organized and connected with your camping community.</p>
+        <p>Join CampNow today to experience hassle-free camping planning and connect with like-minded outdoor enthusiasts. Your next memorable camping experience starts here!</p>
+        <form action="login_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Log In">
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 CampNow</p>
+    </footer>
+</body>
+</html>
